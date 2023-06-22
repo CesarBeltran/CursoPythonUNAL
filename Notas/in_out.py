@@ -22,6 +22,10 @@ cadena1=cadena.upper()
 
 cadena2=cadena1.replace('O','OOO')
 
+# reemplazar varias letras en una misma cadena:
+resultado = cadena.replace('a','i').replace('e','i').replace('o','i').replace('u','i')
+
+
 cadena3=cadena2+'!!!!'
 
 print(cadena3)

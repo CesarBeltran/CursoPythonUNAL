@@ -1,15 +1,6 @@
 ##################################################
-### 💻  Ejemplo: Ejercicios de física (I)  💻 ###
+#### 💻 Tarea: Ejercicios de física (II)  💻 ####
 ##################################################
-'''
-Podemos calcular el valor Posicion final (x) a partir de algunos parámetros iniciales que describen el problema. Estos parámetros iniciales son:
-La velocidad inicial v0 del objeto en dirección del recorrido.
-La posición inicial x0. En este caso el recorrido solo se dará en una dirección de forma horizontal.
-La aceleración a que se mantiene constante en todo el recorrido.
-El tiempo t o duración del recorrido.
-
-Se conoce que la posición de un objeto uniformemente acelerado puede ser calculada por la siguiente ecuación:
-'''
 
 ## 👇 Escriba su código DEBAJO de esta línea 👇 ##
 
@@ -17,32 +8,45 @@ Se conoce que la posición de un objeto uniformemente acelerado puede ser calcul
 # 1) Obtener de la entrada del programa los parámetros iniciales.
 
 '''
-
+x0 = input()
+v0 = input()
+a = input()
+t = input()
 
 # 2) Convertir cada valor de texto obtenido de la entrada en un valor numérico decimal.
-
-x0 = float(int())
-v0 = float(int())
-a = float(int())
-t = float(int())
+x0 = float(x0)
+v0 = float(v0)
+a = float(a)
+t = float(t)
 '''
 
+x0 = 47
+v0 = 6
+a = 5e-2
+t = 147
 
-x0 = 15
-v0 = 3.2
-a = 0
-t = 0
+# 3) Realizar las operaciones matemáticas para las conversiones de unidad de medida necesarias.
+#     Convertir la velocidad inicial de km/h a m/s
 
-# 3) Utilizar los valores numéricos en una expresión matemática y obtener el valor de la posición final.
+v0=v0/3.6
 
+		
+# 4) Utilizar los valores numéricos en las expresiones matemáticas de cada ecuación y obtener el valor de:
 
+#     i. Posición final 
 x = x0+v0*t+(a*t**2)/2
 
 
-# 4) Reportar el resultado de la operación con dos dígitos decimales. :.2    o :.3
 
-print(f"La posición final es {x:.2f} metros.")
+#     ii. Velocidad final.  
+v = (v0+a*t)
+print(f"la velocidad es de {v:.3f} m/s")
 
 
+# Convertiendo de m/s a km/h
+v = v*3.6
 
-## ☝️ Escriba su código ENCIMA de esta línea ☝️ ##
+
+# 5) Reportar el resultado de la operación con el formato solicitado.
+
+print(f"La posición final es de {x:.2f} m y la velocidad es de {v:.3f} km/h")

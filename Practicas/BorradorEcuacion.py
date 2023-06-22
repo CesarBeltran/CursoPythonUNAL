@@ -1,26 +1,15 @@
-
-x0 = 15
-v0 = 3.2
-a = 0
-t = 0
-
-
-# 2) Convertir cada valor de texto obtenido de la entrada en un valor numérico decimal.
+'''ESCRIBA SU CÓDIGO A PARTIR DE AQUÍ ### (~ 7-10 líneas de código)
+Calcular el valor de PI usando la serie de Leibniz.
 '''
-x0 = float(x0)
-v0 = float(v0)
-a = float(a)
-t = float(t)
-'''
+n=25615
+num=4
+signo=1
+pi=0.0
 
-
-
-# 3) Utilizar los valores numéricos en una expresión matemática y obtener el valor de la posición final.
-
-
-x = x0+v0*t+(a*t**2)/2
-
-
-# 4) Reportar el resultado de la operación con dos dígitos decimales.
-
-print(x)
+for n in range(0,n):
+	if n%2!=0:
+		pi=pi+signo*(num/n)
+		signo*= -1
+		print(f"n:{n} num={num} Denom{n} pi:{pi} signo: {signo}")
+		
+print(pi)
