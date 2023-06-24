@@ -1,15 +1,34 @@
-'''ESCRIBA SU CÓDIGO A PARTIR DE AQUÍ ### (~ 7-10 líneas de código)
-Calcular el valor de PI usando la serie de Leibniz.
-'''
-n=25615
-num=4
-signo=1
-pi=0.0
+nsec=int(input())
+i=int(input())
+n=i
+min=3
+max=15
 
-for n in range(0,n):
-	if n%2!=0:
-		pi=pi+signo*(num/n)
-		signo*= -1
-		print(f"n:{n} num={num} Denom{n} pi:{pi} signo: {signo}")
-		
-print(pi)
+print(f"¡Bienvenido! Por favor ingrese números entre {min} y {max} para ganar.")
+for i in range(i):
+    print(f"Intentos restantes: {n-i}.")
+    x=int(input())
+    
+    while max>x>min:
+        if x==nsec:
+            print("¡Felicidades! El número ingresado es correcto.")
+            break
+        
+        elif (n-i==1) and (x!=nsec):
+            print(f"Se acabaron los intentos. El número correcto era {nsec}.")
+            break
+        elif (x!=nsec) and (i<n):
+            
+            if x>nsec:
+                print("Respuesta incorrecta. El número que ingresó es mayor que el número secreto.")
+            elif x<nsec:
+                print("Respuesta incorrecta. El número que ingresó es menor que el número secreto.")
+            
+            
+            
+            
+    print("El número que ingresó no se encuentra en el rango de valores indicado. Intente nuevamente")
+        
+print("Fin del juego. ¡Gracias por participar!")
+
+
