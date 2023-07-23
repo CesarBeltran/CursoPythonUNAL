@@ -1,26 +1,23 @@
+## Entrada del valor HX como string
 
-color16=input()
+color16='#6e00ff'
 
-
-color10
-
-
-patprimo-news@patprimo.com.co
-news@team.semrush.com
+###cadena = "ff"
+###valor_hexadecimal = int(cadena, 16)
 
 
-escuelasef_at_ef_com_w2768130nydxf4_16xq7181@icloud.com
-escuelasef@ef.com
+#crear una lista a partir de un objeto iterable (Cadena introducida)
+lista=list(color16)
+print(lista)
 
-escuelasef@ef.com
-np@neilpatel.com
+#Se convierte en Hexadecimal la posicion las parejas de valores de la lista
+#
+r=int((lista[1]+lista[2]),16)
+g=int((lista[3]+lista[4]),16)
+b=int((lista[5]+lista[6]),16)
 
-noreply@symantec-enterprise-blogs.broadcom.com
-
-design@info.analog.com
-
-alertas_co@computrabajo.com
-
+#r10=int(r, 10)
 
 
+print(f" R: {r} G: {g} B: {b}")
 
