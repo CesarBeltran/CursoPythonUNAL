@@ -1,3 +1,7 @@
+print("#####################################################")
+print("#### Programa: Algoritmo RSA")
+print("#### Asignatura: Seguridad en Nuevas Tecnologías")
+print("#####################################################")
 import math
 
 # Función para calcular el MCD (Máximo Común Divisor)
